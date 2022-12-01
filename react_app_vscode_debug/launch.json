@@ -7,7 +7,7 @@
     {
       "type": "pwa-chrome",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
+      "name": "React App Debug",
       "url": "http://localhost:3000",
       "preLaunchTask": "join_debug_mode", // The name of the task defined above
       "postDebugTask": "leave_debug_mode",
