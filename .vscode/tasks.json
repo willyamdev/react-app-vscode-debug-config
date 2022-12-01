@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "join_debug_mode",
+      "isBackground": true,
+      "command": "yarn",
+      "args": ["start"],
+      "type": "shell",
+      "presentation": {
+        "reveal": "silent"
+      }
+    },
+    {
+      "type": "shell",
+      "label": "leave_debug_mode",
+      "command": "echo ${input:terminate}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "terminate",
+      "type": "command",
+      "command": "workbench.action.tasks.terminate",
+      "args": "terminateAll"
+    }
+  ]
+}
